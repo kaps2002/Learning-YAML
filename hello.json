@@ -1,0 +1,14 @@
+{
+    "cities": [
+      "New Delhi",
+      "blr",
+      "bombay",
+      "chennai"
+    ],
+    "fruits":[
+        "apple",
+        "mango",
+        "banana",
+        "Apple"
+    ]
+}

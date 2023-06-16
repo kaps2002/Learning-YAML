@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'>
+<School name="Amity School" principal="Me">
+    <Students>
+        <Student>
+            <name>Karan Pandey</name>
+            <roll_no>12</roll_no>
+            <marks>78</marks>
+        </Student>
+    </Students>
+</School>

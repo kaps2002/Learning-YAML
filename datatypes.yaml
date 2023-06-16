@@ -1,0 +1,39 @@
+#String
+name: !!str Karan
+fruit: "apple"
+age: '56'
+
+bio: |
+hey i am ece student.
+I live in a new delhi
+
+#Write a single line in multiple lines
+msg: >
+this 
+is a 
+single line.
+
+number: 5473
+marks: 90.5
+booleanvalue: No
+
+#specify the type
+zero: !!int 0
+negnum: !!int -43
+binarynum: !!int 0b110001
+octalnum: !!int 06456
+hexnum: !!int 0x67
+commavalue: !!int +540_000 #540,000
+exponum: !!int 6.023e11
+#floating point numbers
+
+marks: !!float 56.77
+infi: !!float .inf
+not a num: .nan
+
+#Null datatype
+surname: !!null Null # or null NULL ~
+~: this is a null key
+
+#dates and time
+date: !!timestamp 2002-12-14

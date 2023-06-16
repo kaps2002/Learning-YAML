@@ -1,0 +1,69 @@
+student: !!seq
+  - name
+  - marks
+  - age
+  - roll_no
+
+#sparse seq when any value in the seq is empty.
+sparse seq:
+  - hey
+  -
+  - Null
+  - how
+
+#nested seq
+
+nestedseq: !!seq
+  - fruits:
+    - mango
+    - apple
+    - grapes
+  - veggie:
+    - tomato
+    - potato
+    - onion
+
+#key value pairs are called map
+!!map
+
+#nested maps
+name: "Karan"
+role:
+  age: 20
+  job: !!seq
+    -student
+    -dev
+
+# !!set will allow you to have unique values
+
+names: !!set
+  ? karan
+  ? shlok
+  ? daksh
+  ? karan
+
+#dictionary !!omap
+
+people: !!omap
+  - Karan: !!seq
+      age: !!int 20
+      surname: !!str pandey
+  - Shlok: !!seq
+      age: !!int 20
+      surname: !!str sinha
+
+#reuse the properties using anchors
+likings: &likes
+  favfruit: mango
+  dislikes: fighting
+
+person:
+  name: Karan
+  <<: *likes
+
+
+
+
+
+
+
